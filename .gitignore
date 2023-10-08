@@ -1,0 +1,11 @@
+.idea
+.vscode
+log/
+vendor/
+.env
+bin/
+.DS_Store
+.env.yaml
+config.yaml
+docker.env
+*.log

@@ -1,0 +1,25 @@
+GET localhost:9003/api/v1/ping
+#Authorization: Basic user 123456
+Accept: application/json
+
+### List Sender
+POST localhost:8080/api/v1/sender/1
+Authorization: Basic user 123456
+Accept: application/json
+
+{
+    "name": "ac"
+}
+
+
+### Dashboard All Transaction Client By Hour
+POST localhost:8080/api/v1/dashboard/all-transaction
+Authorization: Basic user 123456
+Accept: application/json
+
+{
+    "start_date": "01-11-2019",
+    "end_date": "21-11-2019",
+    "client_id": 222,
+    "sender_id": 297
+}

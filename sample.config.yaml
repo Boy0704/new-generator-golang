@@ -1,0 +1,27 @@
+app:
+  debug: true
+  port: 8080 # Don't Edit This
+  timeout: 5
+basic_auth:
+  customer_service_tool_username: user
+  customer_service_tool_password: 123456
+database:
+  hostname: host.docker.internal
+  port: 3306
+  username: root
+  password:
+  database_name: broadcast
+cors:
+  allow_origins:
+    - https://foo.com
+api:
+  group: api/v1/
+  dashboard_all_transaction: dashboard/all-transaction
+  list_sender: sender/:client_id
+  list_client: clients
+log:
+  dir: log # Don't Edit This
+  file_name: tool_dashboard
+  max_size: 4 # MB with min 1 MB
+  local_time: true
+  compress: true
